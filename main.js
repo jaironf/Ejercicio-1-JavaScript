@@ -30,6 +30,7 @@ console.log(frase2.substring(0, 5));
 
 let numeroFavorito = miNumeroFav.toString();
 console.log(typeof numeroFavorito);
+// tambien se puede hacer concatenando un numero con comillas vacias console.log(3 + "")
 
 
 let deporte = "skate"
@@ -41,7 +42,7 @@ console.log(PI.toFixed(2));
 
 //ARRAYS
 
-let arrayVacio;
+let arrayVacio =[];
 console.log(arrayVacio);
 
 let arrayNumero = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -123,6 +124,8 @@ const Led = {
     lampara2: `verde`,
     lamapara3: `azul`,
 };
+let rgb = Object.values(led);
+// console.log('rgb', rgb)
 
 const O_Error = {
     código: 1
@@ -153,6 +156,7 @@ const movil = {
 console.log(movil.especificaciones.marca);
 
 concierto.grupos += ", Guns N Roses" ;
+// concierto.grupos.push('Guns N Roses') este es MEJOR
 console.log(concierto.grupos);
 
 concierto.fecha = new Date();
